@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pin-generator/static/css/main.8ae171c9.chunk.css",
-    "main.js": "/Pin-generator/static/js/main.08813b19.chunk.js",
-    "main.js.map": "/Pin-generator/static/js/main.08813b19.chunk.js.map",
+    "main.js": "/Pin-generator/static/js/main.a23ec4d0.chunk.js",
+    "main.js.map": "/Pin-generator/static/js/main.a23ec4d0.chunk.js.map",
     "runtime-main.js": "/Pin-generator/static/js/runtime-main.3c9e0b6b.js",
     "runtime-main.js.map": "/Pin-generator/static/js/runtime-main.3c9e0b6b.js.map",
     "static/js/2.5462c607.chunk.js": "/Pin-generator/static/js/2.5462c607.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3c9e0b6b.js",
     "static/js/2.5462c607.chunk.js",
     "static/css/main.8ae171c9.chunk.css",
-    "static/js/main.08813b19.chunk.js"
+    "static/js/main.a23ec4d0.chunk.js"
   ]
 }
