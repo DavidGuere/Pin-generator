@@ -8,18 +8,20 @@ This is a web application that generates random numbers to be used as PIN-s for 
 - [Getting Started](#getting-started)
   - [Prerequisites](#Prerequisites)
   - [Installation](#installation)
-- [About the project](#about)
+- [About the project](#about-the-project)
 - [Technologies](#technologies)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 
 ## Demo
 
+![](images/demo.png)
+
 ## Getting Started
 
 ### Prerequisites
 
-In order to run the project you will need Node installed in your computer.
+To run the project you will need Node installed on your computer.
 
 ### Installation
 
@@ -35,7 +37,7 @@ In order to run the project you will need Node installed in your computer.
   ```sh
   npm install
   ```
-- Run the `npm` command to run the project locally in your computer in development mode:
+- Run the `npm` command to run the project locally on your computer in development mode:
 
   ```
   npm start
@@ -43,7 +45,7 @@ In order to run the project you will need Node installed in your computer.
 
 ## About the project
 
-This web application randomly generates a 4 digit number to be used as PIN. To application does not generate simple PIN-s such as 1111 or 4444 and does not generate the same PIN for two users.
+This web application randomly generates a 4 digit number to be used as a PIN. To application does not generate simple PIN-s such as 1111 or 4444 and does not generate the same PIN for two different users. The application is a responsive website built following an MVC pattern.
 
 ## Technologies
 
@@ -56,23 +58,23 @@ This web application randomly generates a 4 digit number to be used as PIN. To a
 
 To use the application simply enter a username for the new user and click on "Generate PIN" to generate a new PIN.
 
-To view all the users and their respective PIN, click on "Show/Hide list of users" and click on it again the close the list.
+To view all the users and their respective PIN, click on "Show/Hide list of users" and click on it again to close the list.
 
 ## Roadmap
 
-Currently the data is only available for a single user and on a single browser. If the user switches to a different browser, the information stored in the other browser will not persist.
+Currently, the data is only available for a single user and on a single browser. If the user switches to a different browser, the information stored in the other browser will not persist.
 
-Currently the application does not clear the data stored in the user's browser. To clear the data follow the next steps:
+The application does not clear the data stored in the user's browser. To clear the data follow the next steps:
 
 - Chrome:
   1. Press F12.
   2. Select “Application” in the console's top menu.
   3. Select “Local Storage” in the console's left menu.
-  4. Right click your site(s) and click clear to delete the local storage.
+  4. Right-click your site(s) and click clear to delete the local storage.
 - Firefox:
   1. Press F12.
   2. Select "Local Storage" in the console's top menu.
-  3. Right click your site(s) and click clear to delete the local storage.
+  3. Right-click your site(s) and click clear to delete the local storage.
 - Edge:
   1. Press F12.
   2. In the console type: `localStorage.clear()`
