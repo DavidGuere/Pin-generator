@@ -19,6 +19,8 @@ This is a web application that generates random numbers to be used as PIN-s for 
 
 ## Getting Started
 
+If you do not wish to download any file, you can visit https://davidguere.github.io/Pin-generator/ to check the website.
+
 ### Prerequisites
 
 To run the project you will need Node installed on your computer.
