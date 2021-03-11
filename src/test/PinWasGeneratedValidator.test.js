@@ -6,7 +6,7 @@ var numberToValidate = [];
 
 test("Empty storage should return false", () => {
   for (let i = 0; i < storage.length; i++) {
-    expect(pinWasGeneratedValidatorMock(storage[i - 1], storage)).toBeFalsy();
+    expect(pinWasGeneratedValidatorMock(storage[i], storage)).toBeFalsy();
   }
 });
 
@@ -16,10 +16,27 @@ for (let i = 0; i < 10; i++) {
   numberToValidate[i] = number;
 }
 
-test("Full storage and same generated pins as in storage should return true", () => {
+test("Filled storage and same generated pins as in storage should return true", () => {
   for (let i = 0; i < storage.length; i++) {
     expect(
       pinWasGeneratedValidatorMock(numberToValidate[i], storage)
+    ).toBeTruthy();
+  }
+});
+
+var fullStorage = [];
+var fullNumberToValidate = [];
+
+for (let i = 0; i < 20; i++) {
+  let number = generatePinAsInteger();
+  fullStorage[i] = number.toString() + "name";
+  fullNumberToValidate[i] = number;
+}
+
+test("After generating every PIN, it should return false", () => {
+  for (let i = 0; i < storage.length; i++) {
+    expect(
+      pinWasGeneratedValidatorMock(fullNumberToValidate[i], fullStorage)
     ).toBeTruthy();
   }
 });

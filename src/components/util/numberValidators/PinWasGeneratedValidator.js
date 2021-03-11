@@ -8,6 +8,7 @@ function pinWasGeneratedValidator(pinToValidate) {
   var firstKey = window.localStorage.getItem(1);
 
   if (firstKey === null) return false;
+  if (window.localStorage.getItem(8999) !== null) return false;
 
   for (let i = 1; i <= window.localStorage.length; i++) {
     var pin = parseInt(window.localStorage.getItem(i).substring(0, 4));
