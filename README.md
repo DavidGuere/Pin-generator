@@ -9,6 +9,7 @@ This is a web application that generates random numbers to be used as PIN-s for 
   - [Prerequisites](#Prerequisites)
   - [Installation](#installation)
 - [About the project](#about)
+- [Technologies](#technologies)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 
@@ -22,67 +23,56 @@ In order to run the project you will need Node installed in your computer.
 
 ### Installation
 
-In the project directory, you can run:
+- Save or clone the repository from https://github.com/DavidGuere/Pin-generator.
 
-### `npm start`
+  - To save the zip file click on the "Code" button and then on "Download ZIP"
+  - To clone the repository open the terminal in your desired directory and run the `git clone` command:
+    ```sh
+    git clone https://github.com/DavidGuere/Pin-generator.git
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Run the following code to install the necessary modules:
+  ```sh
+  npm install
+  ```
+- Run the `npm` command to run the project locally in your computer in development mode:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  ```
+  npm start
+  ```
 
-### `npm test`
+## About the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This web application randomly generates a 4 digit number to be used as PIN. To application does not generate simple PIN-s such as 1111 or 4444 and does not generate the same PIN for two users.
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- JavaScript: A high-level programming language.
+- React: An open-source, front end, JavaScript library for building user interfaces or UI components.
+- HTML: Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.
+- CSS: A style sheet language used for describing the presentation of a document written in HTML.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To use the application simply enter a username for the new user and click on "Generate PIN" to generate a new PIN.
 
-### `npm run eject`
+To view all the users and their respective PIN, click on "Show/Hide list of users" and click on it again the close the list.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Roadmap
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Currently the data is only available for a single user and on a single browser. If the user switches to a different browser, the information stored in the other browser will not persist.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Currently the application does not clear the data stored in the user's browser. To clear the data follow the next steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Chrome:
+  1. Press F12.
+  2. Select “Application” in the console's top menu.
+  3. Select “Local Storage” in the console's left menu.
+  4. Right click your site(s) and click clear to delete the local storage.
+- Firefox:
+  1. Press F12.
+  2. Select "Local Storage" in the console's top menu.
+  3. Right click your site(s) and click clear to delete the local storage.
+- Edge:
+  1. Press F12.
+  2. In the console type: `localStorage.clear()`
